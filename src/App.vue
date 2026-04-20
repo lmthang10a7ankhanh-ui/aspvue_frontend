@@ -5,7 +5,7 @@ const message = ref('')
 
 onMounted(async () => {
   try {
-    const res = await fetch('http://localhost:5214')
+    const res = await fetch('https://serverapi-i4g6.onrender.com/')
     message.value = await res.text()
   } catch (err) {
     console.error(err)
